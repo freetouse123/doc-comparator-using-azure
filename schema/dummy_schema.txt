@@ -1,0 +1,29 @@
+
+
+## pydantic model for the Master formula
+class granularity:
+    type_of_granular = None
+    Item_Code = None
+    Name_of_the_Ingredients = None
+    Spec = None
+    Quantity_per_Tablet_unit = None
+    Quantity_per_Tablet_per_unit = None
+    Quantity_Per_Batch_unit = None
+    Quantity_Per_Batch_Quantity = None
+    per_weight_to_weight_ratio = None
+
+class TotalWeight:
+    Total_Quantity_per_Tablet_unit = None
+    Total_Quantity_per_Tablet_quanity = None
+    Total_Quantity_Per_Batch_Quantity = None
+    Total_per_weight_to_weight_ratio = None
+    Total_per_weight_to_weight_ratio = None
+
+
+
+class MasterFormula:
+    Inter_granularity:dict[granularity] = None
+    extra_granularity:dict[granularity] = None
+    Total_Weight:dict[TotalWeight] = None
+    package_component:dict[granularity] = None
+
